@@ -1,6 +1,6 @@
 import streamlit as st
 
-a = st.number_input("Please enter the first number : ", step=1)
+a = st.number_input("Please enter the first number : ")
 
 b = st.number_input("Please enter the second number : ")
 
