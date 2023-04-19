@@ -1,14 +1,17 @@
 import streamlit as st
 
-a = st.number_input("Please enter number 1: ")
+a = st.number_input("Please enter the first number : ", step=1)
 
-b = st.number_input("Please enter number 2: ")
+b = st.number_input("Please enter the second number : ")
 
-c = st.number_input("Please enter number 3: ")
+c = st.number_input("Please enter the third number : ")
 
 if(a>b and a>c):
-	st.write(a)
+	s = a
 elif(b>c and b>a):
-	st.write(b)
+	s = b
 else:
-	st.write(c)
+	s = c
+
+if st.button("Find the largest number !"):
+	st.write(f"The largest number is {s}")
